@@ -7,7 +7,7 @@ import { defineConfig } from 'vite';
 export default defineConfig({
   // GitHub Pages 项目页部署在 /<仓库名>/ 子路径下。使用相对基路径，
   // 资源会自动解析为 ./assets/...，无需把仓库名硬编码到配置里。
-  base: './',
+  base: '/todolist/',
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
