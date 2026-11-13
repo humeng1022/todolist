@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+/*
+ * TECH.md 第 12 节以 tailwind.config.js 扩展 priority 颜色。Tailwind CSS v4
+ * 采用 CSS-first 配置，这里用 @theme 声明同名设计令牌，生成的工具类与
+ * tailwind.config.js 方案一致（text-priority-high、accent-priority-low 等）。
+ */
+@theme {
+  --color-priority-low: #6b7280;
+  --color-priority-medium: #f59e0b;
+  --color-priority-high: #ef4444;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    color-scheme: light;
+  }
+}
